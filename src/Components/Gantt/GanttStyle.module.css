@@ -1,0 +1,34 @@
+#button_container {
+    display: flex;
+    width: 100%;
+    height: 2em;
+    margin: auto;
+    margin-bottom: 2em;
+    align-content: flex-end;
+}
+
+#create_button {
+    margin: auto !important;
+    margin-right: 0 !important;
+}
+
+#gantt_card {
+    padding-top: 2em;
+    border-radius: 2em;
+    background-color: rgba(255, 255, 255, 1.0);
+}
+
+#form_pairs{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90% !important;
+    margin-bottom: 1em;
+}
+
+#form_pairs > * {
+    display: flex !important;
+    margin: auto !important;
+    width: 100% !important;
+    margin-bottom: 1em !important;
+}

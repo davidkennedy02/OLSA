@@ -1,0 +1,12 @@
+.list_group {
+    text-align: left !important;
+}
+
+.list_group > *{
+    background-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+#box {
+    width: 100%;
+    
+}

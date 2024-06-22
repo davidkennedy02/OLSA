@@ -1,0 +1,16 @@
+#navbar_colour {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+#alert_container {
+    margin: auto !important;
+    /* margin-left: 5em !important; */
+    /* width: 30% !important; */
+    justify-content: bottom;
+    display: inline-block;
+}
+
+#alert {
+    margin: auto !important;
+    padding-top: 2em !important;
+}

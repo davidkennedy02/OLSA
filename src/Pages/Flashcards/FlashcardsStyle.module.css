@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+.background_1 {
+    background-image: url("./../../Assets/vecteezy_vector-abstract-smooth-liquid-banner-for-presentation-backdrop_27197499.svg");
+    background-position: auto;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#title_container {
+    display: flex;
+    padding-top: 50px;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    justify-content: center;
+    color: black
+}
+
+#title {
+    font-size: 70px;
+    line-height: normal;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-weight: 300;
+    color: black;
+    margin-bottom: 0em;
+}
+
+#controls {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 1600px) {
+    #controls {
+        width: 80%;
+    }
+}
+
+#control_button {
+    margin-left: 1em;
+}
+
+#search_bar {
+    width: 20%;
+    margin: auto;
+    margin-left: 0px;
+}
+
+#main_content_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    width: 90%;
+    margin: auto;
+    /* justify-content: center; */
+    /* text-align: center; */
+    padding-top: 3em;
+    /* Note: this breaks positioning of cards during search */
+    height: auto !important;
+    min-height: 60vh;
+    vertical-align: top;
+    padding-bottom: 3em;
+    align-content: flex-start;
+}
+
+@media (min-width: 1600px) {
+    #main_content_container {
+        width: 80%;
+    }
+}
+
+.auto_cards {
+    box-shadow: rgba(0, 0, 0, 0.32) 0px 2px 8px;
+    border-radius: 2em !important;
+    /* padding: 1em; */
+    text-align: center;
+    border: none !important;
+    margin: auto;
+    width: 100%;
+    height: 25vh !important;
+    justify-content: center;
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+    background-color: rgba(255, 255, 255, 0.90) !important;
+}
+
+.auto_cards:hover {
+    transform: scale(1.1);
+}
+
+.auto_cards img {
+    height: 100px !important;
+    width: 100px !important;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.card_content_container{
+    display: grid;
+    grid-template-areas: 
+    ". . name . ."
+    ". . count . ."
+    ;
+    width: 100%;
+    margin: auto;
+    justify-items: center;
+    text-align: center;
+    gap: 0em;
+}   
+
+#set_name {
+    grid-area: name;
+    margin: auto;
+    /* font-size: x-large; */
+    /* font-size: 2vw; */
+}
+
+#set_count {
+    grid-area: count;
+    margin: auto;
+    margin-bottom: 0em;
+    /* margin-top: 1em; */
+    background-color: rgba(220, 220, 220, 0.5);
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+/* #edit_button {
+    grid-area: edit ;
+    justify-self: left;
+    vertical-align: bottom;
+    margin: none;
+    border-radius: 100%;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    background-color: yellow !important;
+    border: 1px black solid !important;
+} */
+
+#form_set_name {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+#form_pairs{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90% !important;
+    margin-bottom: 1em;
+}
+
+#form_pairs > * {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    margin: auto !important;
+    width: 100% !important;
+    margin-bottom: 1em !important;
+}
+
+#form_pairs > * > * {
+    width: 45% !important;
+    margin: auto !important;
+}
+
+#delete_button {
+    margin: auto;
+    margin-left: 0px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    margin-top: auto;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top: 2em;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+
+    #set_name {
+        font-size: medium;
+    }
+
+    #set_count {
+        font-size: small;
+    }
+
+    #title {
+        font-size: 50px;
+        margin-bottom: 1em;
+    }
+
+    #search_bar {
+        width: 45%;
+    }
+}
+
+@media (max-width: 700px) {
+    #main_content_container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #set_name {
+        font-size: medium;
+    }
+
+    #set_count {
+        font-size: small;
+    }
+
+
+
+    #control_button {
+        font-size: small !important;
+    }
+}

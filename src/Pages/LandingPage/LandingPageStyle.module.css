@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+main {
+    width: 100%;
+}
+
+.background_1 {
+    background-image: url("./../../Assets/vecteezy_vector-abstract-smooth-liquid-banner-for-presentation-backdrop_27197499.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    z-index: 999;
+    font-size: larger;
+} 
+
+.title {
+    font-size: 70px !important;
+    line-height: normal;
+    color: black;
+    font-weight: 300 !important;
+    /* text-align: center; */
+}
+
+#title_button {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5em;
+}
+
+.subtitle {
+    font-weight: lighter;
+    font-size: 35px;
+    line-height: normal;
+    color: black;
+    /* text-align: center; */
+}
+
+.arrow {
+    transform: rotate(140deg);
+    object-fit: scale-down;
+    width: 80%;
+    height: auto;
+    margin-bottom: 2em;
+    margin-top: 2em
+}
+
+#title_card {
+    grid-area: title;
+    border: none !important;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+#arrow_card {
+    grid-area: arrow;
+    border: none !important;
+    background: none;
+}
+
+.title_box {
+    display: grid;
+    grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "title title title arrow";
+    gap: 3em;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    justify-self: auto;
+    margin-top: 2em;
+}
+
+#feature_title {
+    margin: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 2em;
+    width: 80%;
+    font-weight: 100 !important;
+}
+
+#feature1 {
+    grid-area: feature1;
+}
+
+#feature2 {
+    grid-area: feature2;
+}
+
+#feature3 {
+    grid-area: feature3;
+}
+
+.feature_image{
+    max-width: 250px;
+    justify-self: auto;
+    margin: auto;
+    padding: 2em;
+    padding-bottom: 1em;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "feature1 feature2 feature3";
+    gap: 3em;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    justify-self: auto;
+    padding-bottom: 3em;
+}
+
+
+.grid_item{
+    margin: auto;
+    justify-content: center;
+    justify-self: auto;
+    text-align: center;
+    border: none !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    border-radius: 3em !important;
+}
+
+
+#olsa_description_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "wizzkid description";
+    gap: 3em;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    justify-self: auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#wizzkid {
+    max-height: 400px;
+    height: auto;
+    width: auto;
+    justify-self: auto;
+    margin: auto;
+    grid-area: wizzkid;
+}
+
+#description{
+    grid-area: description;
+    border: none !important;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3em;
+}
+
+#why_olsa {
+    font-size: 40px;
+    margin-bottom: 0.5em;
+}
+
+#get_started_today {
+    width: 50%
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    padding-top: 2em;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .title_box {
+        grid-template-areas: 
+    "title title title title"
+    ". arrow arrow .";
+    }
+
+    .title {
+        font-size: 50px !important;
+    }
+
+    
+    .subtitle {
+        font-size: 25px;
+    }
+
+    .grid_container {
+        grid-template-areas: 
+        "feature1 feature1 feature1"
+        "feature2 feature2 feature2"
+        "feature3 feature3 feature3";
+    }
+
+    #wizzkid {
+        width: 60vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 990px) {
+    #olsa_description_box {
+        grid-template-areas: 
+        "description description"
+        "wizzkid wizzkid";
+    }
+
+    .title_box {
+        width: 60%;
+    }
+
+    #button_box {
+        margin:auto !important;
+        justify-self: auto !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    
+}
+
+@media (min-width: 1600px) {
+    .title_box {
+        width: 70%;
+    }
+
+    #olsa_description_box {
+        width: 70%;
+    }
+
+    #title_button {
+        margin-top: 1em;
+    }
+}

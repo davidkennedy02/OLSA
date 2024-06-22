@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+.background_1 {
+    background-image: url("./../../Assets/vecteezy_vector-abstract-smooth-liquid-banner-for-presentation-backdrop_27197499.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#title_container {
+    display: flex;
+    padding-top: 50px;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    justify-content: center;
+    color: black
+}
+
+#title {
+    font-size: 70px;
+    line-height: normal;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-weight: 300;
+    color: black;
+}
+
+#zigzag {
+    width: auto;
+    height: 50px;
+    justify-self: auto;
+    margin: auto;
+}
+
+#main_content_container {
+    width: 60%;
+    margin: auto;
+    margin-top: 3em;
+    min-height: 80vh;
+}
+
+
+.footer {
+    width: 100%;
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(220, 220, 220, 0.2);
+    padding-top: 2em;
+    text-align: center;
+}
+
+@media (max-width: 950px) {
+    #title {
+        font-size: 60px;
+    }
+
+    #main_content_container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 700px) {
+    #main_content_container {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+
+    #title {
+        font-size: 50px;
+    }
+}

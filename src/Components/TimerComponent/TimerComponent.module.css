@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+#timer_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    vertical-align: auto;
+    background-color: rgba(255, 255, 255, 1.0);
+    border-radius: 5em;
+}
+
+#stepper_container {
+    margin: auto;
+    width: 50vw;
+}
+
+#stepper {
+    margin: auto;
+    width: 50vw;
+    margin-top: 2em;
+}
+
+#mobile_stepper {
+    display: none;
+}
+
+#timer_numbers {
+    font-size: 8em;
+    line-height: fit-content;
+    vertical-align: auto;
+    margin-top: -10px;
+    font-weight: 300;
+}
+
+#timer_numbers_container {
+    margin: auto;
+    margin-top: 2em;
+    /* background-color: rgba(220, 220, 220, 0.2); */
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    width: 60%;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 1em;
+}
+
+#timer_buttons {
+    margin-bottom: 1em;
+}
+
+#timer_buttons Button {
+    width: 7.5vw;
+    margin: auto;
+    height: auto;
+    border: none !important;
+    outline: none !important;
+    background: none !important;
+}
+
+#timer_buttons img {
+    width: 5vw;
+    height: auto;
+    margin: auto;
+    border: none !important;
+    outline: none !important;
+    background: none !important;
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+#timer_buttons img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1055px) {
+    #timer_numbers{ 
+        font-size: 6em;
+    }
+
+    #stepper {
+        display: none;
+    }
+
+    #mobile_stepper { 
+        display: flex;
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding-top: 2em;
+    }
+
+    #timer_buttons Button {
+        width: 4em;
+        justify-content: center;
+    }
+
+    #timer_buttons img {
+        width: 3.0em;
+        padding-right: 0px !important;
+    }
+
+    #timer_buttons {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #timer_numbers_container {
+        padding-left: 0.3em;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    #timer_numbers {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 450px) {
+    #timer_numbers {
+        font-size: 4em;
+    }
+}

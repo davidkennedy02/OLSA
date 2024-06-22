@@ -1,0 +1,38 @@
+#button_container {
+    display: flex;
+    width: 100%;
+    height: 2em;
+    margin: auto;
+    margin-bottom: 2em;
+    align-content: flex-end;
+}
+
+#create_item_button {
+    margin: auto;
+    margin-right: 0px;
+}
+
+#form_pairs{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90% !important;
+    margin-bottom: 1em;
+}
+
+#form_pairs > * {
+    display: flex !important;
+    margin: auto !important;
+    width: 100% !important;
+    margin-bottom: 1em !important;
+}
+
+@media (max-width: 700px) {
+    #calendar_component {
+        font-size: 10px !important;
+    }
+
+    /* .rbc-calendar {
+        font-size: 10px !important;
+    } */
+}

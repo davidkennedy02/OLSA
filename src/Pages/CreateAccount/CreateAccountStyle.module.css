@@ -1,0 +1,59 @@
+.background_1 {
+    background-image: url("./../../Assets/vecteezy_vector-abstract-smooth-liquid-banner-for-presentation-backdrop_27197499.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+main {
+    height: 100vh;
+}
+
+#title_container {
+    width: 80%;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+#title {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#form_card {
+    border-radius: 2em;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40%;
+    margin: auto;
+}
+
+#form_container {
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    text-align: center;
+    justify-content: center;
+}
+
+/* #submit_button {
+    margin-top: 1em;
+} */
+
+.footer {
+    position: absolute; bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top: 2em;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    #form_card {
+        width: 80%;
+    }
+}
